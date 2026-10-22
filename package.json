@@ -1,0 +1,48 @@
+{
+  "name": "airmoto",
+  "version": "16.1.0",
+  "description": "",
+  "main": "main.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nickopicazo/airmoto-2027.git"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode production",
+    "build:dev": "webpack --config webpack.config.js --mode development --watch",
+    "theme:dev": "shopify theme dev --environment develop",
+    "dev": "npm-run-all --parallel build:dev theme:dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "Nicko Picazo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "cssnano": "^6.0.1",
+    "jquery": "^3.7.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "postcss-loader": "^7.3.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.3.0",
+    "slick-carousel": "^1.8.1",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.4.17",
+    "to-string-loader": "^1.2.0",
+    "webpack": "^5.86.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "intl-tel-input": "^26.8.0",
+    "luxon": "^3.7.2"
+  }
+}
